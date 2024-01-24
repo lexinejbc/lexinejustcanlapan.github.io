@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #040D12;
+    --text-color: #fff;
+    --main-color: #FBB8D7;
+    --another-c0lor: #949494;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%; 
+    transition: all .50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+    
+}
+
+@media (max-width: 1090px) {
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 30vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0; 
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        transform: translateY(5px)
+    }
+
+    .navbar a.active {
+        color: var(--text-color);
+    }
+
+    .navbar.open{
+        right: 2%;
+    }
+
+}
+
+
+h2 {
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--main-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    animation: typing 3s steps(40) infinite;
+    overflow: hidden; /* Hide the overflow content */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+h1:hover {
+    color: #c44569;
+    transform: scale(1.1); /* Added scaling effect on hover */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* Expand to full width */
+    }
+}
+.awards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.award-content {
+    text-align: center;
+}
+
+.award-item1 {
+        width: 100%;
+        background: url(img/grade11.PNG);
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        padding: 80px 70px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+}
+.award-item2 {
+    width: 100%;
+    background: url(img/grade12.png);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 80px 70px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.award-item3 {
+    width: 100%;
+    background: url(img/nc.png);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 80px 100px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.award-item4 {
+    width: 100%;
+    background: url(img/ptcpic.png);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 80px 100px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+        }
+
+.award-item1:hover,
+.award-item2:hover,
+.award-item3:hover,
+.award-item4:hover {
+    transform: translateY(-15px);
+}
+
+.award-item1:hover {
+    background: var(--main-color);
+    transform: translateY(-10px);
+    color: var(--bg-color);
+}
+
+.award-item2:hover {
+    background: var(--main-color);
+    transform: translateY(-10px);
+    color: var(--bg-color);
+}
+
+.award-item3:hover {
+    background: var(--main-color);
+    transform: translateY(-10px);
+    color: var(--bg-color);
+}
+
+.award-item4:hover {
+    background: var(--main-color);
+    transform: translateY(-10px);
+    color: var(--bg-color);
+}
+
+
+.about-content h3 {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #ededed; /* Initial color */
+    transition: color 0.3s ease; /* Add color transition */
+}

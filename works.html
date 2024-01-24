@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexine Just</title>
+    <link rel="stylesheet" href="works.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/my_logo-removebg-preview.png" alt="Logo Image" id="img">
+            <span>LexineJust</span>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="works.html" class="active">Work</a></li>
+        </ul>
+
+        <div>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>Some of <span>my Works</span><span class="bg-text">Works samples</span></h2>
+                <div class="portfolios">
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/autoca.PNG" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>View this</h3>
+                            <div class="icons">
+                                <a href="https://drive.google.com/file/d/1jvyJfmUSAx8saOuWvq1ZKWLld8K9ByHG/view?usp=sharing" class="icon" target="_blank">
+                                    <i class="ri-pencil-ruler-2-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/studentdatarecords.PNG" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>View this</h3>
+                            <div class="icons">
+                                <a href="https://drive.google.com/file/d/1EtDoAbAg3Flq1aBT2g3jlSohDjqwxdln/view?usp=sharing" class="icon" target="_blank">
+                                    <i class="ri-computer-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="portfolio-item">
+                        <div class="image">
+                            <img src="img/tinkercad.PNG" alt="">
+                        </div>
+                        <div class="hover-items">
+                            <h3>View this</h3>
+                            <div class="icons">
+                                <a href="https://drive.google.com/file/d/11N89prGVdROalYeEtty8pPf9r_YG5Q7n/view?usp=sharing" class="icon" target="_blank">
+                                    <i class="ri-hammer-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+    </section>
+
+    <div id="contact">
+        <div class="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ptc.lexinejustcanlapan@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>09777819854</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/lexinejbc31" target="_blank"><i class="ri-facebook-fill"></i></i></a>
+                        <a href="https://www.instagram.com/lexinejbc?igshid=YzVkODRmOTdmMw==" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.tiktok.com/@lexinejbc31?_t=8iEhobSYNEt&_r=1" target="_blank"><i class="ri-tiktok-line"></i></a>
+                        <a href="https://github.com/lexinejbc" target="_blank"><i class="ri-github-fill"></i></i></a>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</main>
+
+    
+        
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menu = document.querySelector('.bx-menu');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                navbar.classList.toggle('open');
+            };
+        });
+    </script>
+</body>
+
+</html>

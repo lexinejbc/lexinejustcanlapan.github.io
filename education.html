@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexine Just</title>
+    <link rel="stylesheet" href="education.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/9586a0918c.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <a href="index.html" class="logo">
+            <img src="img/my_logo-removebg-preview.png" alt="Logo Image" id="img">
+            <span>LexineJust</span>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="works.html">Work</a></li>
+        </ul>
+
+       <div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+       </div>
+    </header>
+    
+    
+    <section class="education">
+        <div class="education-content">
+            <h1><i class="fa-solid fa-user-graduate"></i> EDUCATION</h1>
+
+            <div class="education-item">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Dr. Sixto Antonio Elementary School</h3>
+                <p>Elementary</p>
+                <p>2007 - 2013</p>
+            </div>
+
+            <div class="education-item">
+                <h3><i class="fa-solid fa-graduation-cap"></i> San Joaquin Kalawaan High School</h3>
+                <p>Junior High School</p>
+                <p>2013 - 2017</p>
+            </div>
+
+            
+            <div class="education-item">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Buting Senior High School</h3>
+                <p>Information and Communication Technology</p>
+                <p>2017 - 2018</p>
+            </div>
+            
+            <div class="education-item">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Pateros Technological College</h3>
+                <p>Bachelor of Science in Information Technology</p>
+                <p>2021 - Present</p>
+            </div>
+        </div>
+
+        <a href="awards.html">
+            <button type="button"> Awards <i class="ri-medal-fill"></i></i></button>
+        </a>
+    </section>
+
+
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menu = document.querySelector('.bx-menu');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                navbar.classList.toggle('open');
+            };
+        });
+    </script>
+</body>
+
+</html>

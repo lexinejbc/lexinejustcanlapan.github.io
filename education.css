@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+:root {
+    --bg-color: #040D12;
+    --text-color: #fff;
+    --main-color: #FBB8D7;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar a.active {
+    color: var(--main-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main a {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 30vh;
+        background:var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        transform: translateY(5px)
+    }
+
+    .navbar a.active {
+        color: var(--text-color);
+    }
+
+    .navbar.open {
+        right: 2%;
+    }
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ededed;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Added transition for color and transform */
+    cursor: pointer;
+}
+
+.education {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.education-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-item {
+    width: 65%;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgb(255, 113, 191);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main a {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .education-item {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Add additional styles if needed for smaller screens */
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Add the following styles to your existing CSS */
+
+.btn-box {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c44569;
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-box a:hover {
+    background-color: #a13456;
+}
+
+h1:hover {
+    color: var(--main-color);
+    transform: scale(1.1);
+    /* Added scaling effect on hover */
+}
+
+
+button {
+    background-color: var(--main-color);
+    color: black;
+    border: 2px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    transition: .4s;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1180px) {
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about .content img {
+        margin-bottom: 35px;
+    }
+
+    .text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
+

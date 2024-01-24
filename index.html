@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexine Just</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/my_logo-removebg-preview.png" alt="Logo Image" id="img">
+            <span>LexineJust</span>
+        </a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="works.html">Work</a></li>
+        </ul>
+
+        <div>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <main>
+       
+        <section class="about">
+            <div class="content">
+                <img src="img/my_logo-removebg-preview.png" class="img">
+                <div class="text">
+                    <h1>Hello!</h1>
+                    <h5>I am <span>Lexine Just B. Canlapan</span></h5>
+                    <p>Get to know me better by clicking the button below.</p>
+                    <a href="about.html">
+                        <button type="button"> About <i class="ri-bear-smile-line"></i></button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <div class="snowflakes-container" aria-hidden="true"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menu = document.querySelector('.bx-menu');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                navbar.classList.toggle('open');
+            };
+
+            const snowflakesContainer = document.querySelector('.snowflakes-container');
+
+            for (let i = 0; i < 50; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflakesContainer.appendChild(snowflake);
+
+                // Randomize position
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            }
+        });
+    </script>
+</body>
+
+</html>

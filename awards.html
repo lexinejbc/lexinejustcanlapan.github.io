@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexine Just</title>
+    <link rel="stylesheet" href="awards.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <a href="index.html" class="logo">
+            <img src="img/my_logo-removebg-preview.png" alt="Logo Image" id="img">
+            <span>LexineJust</span>
+        </a>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="works.html">Work</a></li>
+        </ul>
+
+       <div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+       </div>
+    </header>
+
+    <section class="awards">
+        <div class="award-content">
+        <h2>Awards</h2>
+        <div class="award-item1">
+            <h3>With Honors</h3>
+            <p>Buting Senior High School (Grade 11)</p>
+            <span class="award-date">March 2018</span>
+        </div>
+
+        <div class="award-item2">
+            <h3>With Honors</h3>
+            <p>Buting Senior High School (Grade 12)</p>
+            <span class="award-date">April 2019</span>
+        </div>
+
+        <div class="award-item3">
+            <h3>NCII Passer</h3>
+            <p>Computer Systems Servicing</p>
+            <span class="award-date">November 2018</span>
+        </div>
+
+
+        <div class="award-item4">
+            <h3>Presidential Academic Execellence Award</h3>
+            <p>Pateros Technological College</p>
+            <span class="award-date">August 2023</span>
+        </div>
+    </div>
+    </section>
+
+
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menu = document.querySelector('.bx-menu');
+            let navbar = document.querySelector('.navbar');
+
+            menu.onclick = () => {
+                navbar.classList.toggle('open');
+            };
+        });
+    </script>
+</body>
+
+</html>
